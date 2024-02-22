@@ -5,10 +5,15 @@ public class Wedding extends Couple{
     private Couple couple;
     private LocalDate date;
     private String location;
-    // constructor
+    // constructors
     Wedding(){
         this.couple = new Couple();
     };
+    Wedding(Couple couple, LocalDate date, String location) {
+        this.couple = couple;
+        this.date = date;
+        this.location = location;
+    }
     // getters
     public Couple getCouple() {
         return couple;

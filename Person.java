@@ -1,8 +1,9 @@
 public class Person {
     private String firstName;
     private String lastName;
-    public Person() {}
-
+    // constructors
+    Person() {};
+    Person(String firstName, String lastName) {};
     // getters
     public String getFirstName() {
         return firstName;
